@@ -15,7 +15,7 @@ if (getTodoList !== null) {
 }
 
 function deleteTodo(event) {
-    const li = event.target.parentElement;
+    const li = event.target.parentElement.parentElement;
     li.remove();
 
     todoObj = todoObj.filter((todo) => todo.id !== parseInt(li.id));
