@@ -20,8 +20,8 @@ if (getUsername === null) {
       introBg.classList.add("opacity0");
       main.classList.remove("none")
       
-      setTimeout(changeToBodyImg, 3000);
-      setInterval(changeBgImg, 6000);
+      setTimeout(changeToBodyImg, 5000);
+      setInterval(changeBgImg, 10000);
   }
   nameForm.addEventListener("submit",submitLogin);
 
@@ -31,16 +31,6 @@ if (getUsername === null) {
   introBg.classList.add("opacity0");
   main.classList.remove("none")
   
-  setTimeout(changeToBodyImg, 3000);
-  setInterval(changeBgImg, 6000);
+  setTimeout(changeToBodyImg, 5000);
+  setInterval(changeBgImg, 10000);
 }
-
-
-// function mouseleave(event) { 
-
-// }
-// function mousemove(event) {
-// console.log(event)
-// }
-// nameForm.addEventListener("mouseleave",mouseleave)
-// nameForm.addEventListener("mousemove",mousemove)
