@@ -1,0 +1,172 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR&display=swap');
+
+.none {
+  display: none!important;
+}
+.opacity0 { opacity: 0; }
+
+html, body, div, p, form, input, span, h1, h2, h3, button, ul, li { padding: 0; margin: 0; box-sizing: border-box;
+  font-family: 'Noto Sans', 'Noto Sans KR', '맑은 고딕'; border: 0; color: #fff; font-size: 14px; 
+  line-height: 1.2; }
+html, body, .bg, .introBg, .main { width: 100%; height: 100%; }
+.bg, body { background-size: cover; background-position: center; }
+
+a { text-decoration: none; }
+input { padding: .5rem 1rem; background: transparent; }
+input:focus-visible { outline: none; }
+input::placeholder { color: #bcbcbc; }
+button { background: #66c; border-radius: .5rem; padding: .5rem 1rem; color: #fff; border: 1px solid #66c;
+  cursor: pointer; }
+
+.bg { z-index: -1; position: fixed; top: 0; left: 0; transition: 1s; }
+
+.geolocation { text-align: right; margin-bottom: 13rem; }
+.geolocation .text { font-size: 1.3rem; color: #aaa; }
+.geolocation .locate { font-size: 2.5rem; display: inline-block; margin: .4rem 0 2rem; }
+.geolocation .geoImg { vertical-align: middle; height: 4rem; }
+.geolocation .temperature { color: #fff; }
+
+.intro { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: inline-flex; 
+  flex-direction: column; justify-items: center; text-align: center; z-index: 2; }
+.introBg { background: url("/img/bgImg04.jpg") center; background-size: cover; transition: 1s; }
+.intro .date { margin-bottom: 3rem; }
+.intro .dateTitle { font-size: 3rem; }
+.intro .clock { font-size: 6rem; }
+.intro .nameForm { display: inline-block; }
+.intro .username { font-size: 3.5rem; margin-bottom: 1.2rem; }
+.intro input { border-radius: .5rem; text-align: center; }
+.intro input:hover, .intro input:focus { background: rgba(255,255,255,.5); }
+.intro input::placeholder { color: #fff; } 
+
+.main { background: rgba(0, 0, 0, .3); position: fixed; top: 0; left: 0; padding: 3rem; display: flex; 
+  overflow: auto; justify-content: space-between; align-items: end; flex-direction: column; }
+.main .content { width: 100%; display: flex; justify-content: space-between; min-height: 35rem; }
+.main .left, .main .right { display: flex; flex-direction: column; justify-content: space-between; }
+.main .title { color: #fff; font-size: 2rem; margin-bottom: 1.5rem; }
+.main .area { background: rgba(255,255,255,.1); padding: 1.2rem 1.5rem; border-radius: .5rem; }
+.main .geolocation, .main .todoList, .main .numberGame, .main .dDayCalculator { width: 32rem; }
+.main input { border-bottom: 1px solid #eee; color: #fff; border-radius: .2rem; }
+
+.main .dDayCalculator { margin-bottom: 4rem; }
+.main .dDayCalculator .dDayForm { justify-content: space-between; display: flex; }
+.main .dDayCalculator input { width: 6rem; text-align: center; margin-right: 1.5rem; flex: 1 1 0; }
+.main .dDayCalculator button { width: 5rem; flex: 1 1 0; }
+.main .dDayCalculator .dDayInfo { font-size: 1.2rem; margin-bottom: .5rem; }
+.main .dDayCalculator .dDayCount { font-size: 1.3rem; margin-bottom: 1rem; }
+.main .dDayCalculator .btnBox { text-align: right; }
+
+.main .numberGame input { width: 6rem; text-align: center; margin: 0 0 .5rem 1rem; padding: .2rem .5rem; }
+.main .numberGame .numberGameForm { display: flex; justify-content: space-between; }
+.main .numberGame .result { margin-top: 1.5rem; text-align: center; }
+.main .numberGame .resultText { margin-top: .5rem; font-size: 1.3rem; color:tomato; font-weight: bold; }
+
+.main .todoList, .main .todoList .area { display: flex; flex-direction: column; flex: 1 1 0; }
+.main .todoList .todoListForm { text-align: center; margin-bottom: 2rem; }
+.main .todoList .todo { width: 20rem; }
+.main .todoList ul { flex: 1 1 0; overflow: auto; padding: 1rem; }
+.main .todoList li { display: flex; justify-content: space-between; margin-bottom: .3rem; }
+.main .todoList li span  { font-size: 1.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; 
+  flex: 1 1 0; }
+.main .todoList .btnBox { width: 5rem; text-align: right; }
+.main .todoList button { background: transparent; border: 0; transition: .2s; font-size: 1.2rem; 
+  padding: .3rem 0 .3rem .5rem; vertical-align: middle; }
+.main .todoList button:hover, .main .todoList button.done { color: lightskyblue; font-weight: bold; }
+.main .todoList span.done { text-decoration: line-through; }
+
+.main .todoList ul::-webkit-scrollbar { width: .5rem; }
+.main .todoList ul::-webkit-scrollbar-thumb { background: lightskyblue; border-radius: 1rem; }
+.main .todoList ul::-webkit-scrollbar-track { background: rgba(255,255,255,.3); border-radius: 1rem; }
+
+
+@media screen and (max-width: 1599px) {
+  html, body, div, p, form, input, span, h1, h2, h3, button, ul, li { font-size: 13px; }
+  .intro .date { margin-bottom: 2.8rem; }
+  .intro .dateTitle { font-size: 2.8rem; }
+  .intro .clock { font-size: 5.8rem; }
+  .intro .username { font-size: 3.3rem; margin-bottom: 1rem; }
+  
+  .main .title { font-size: 1.8rem; margin-bottom: 1.3rem; }
+}
+
+@media screen and (max-width: 1399px) {
+  html, body, div, p, form, input, span, h1, h2, h3, button, ul, li { font-size: 12px; }
+  .intro .date { margin-bottom: 2.5rem; }
+  .intro .dateTitle { font-size: 2.5rem; }
+  .intro .clock { font-size: 5.5rem; }
+  .intro .username { font-size: 3rem; margin-bottom: .8rem; }
+
+  .main .title { font-size: 1.5rem; margin-bottom: 1rem; }
+}
+
+@media screen and (max-width: 1279px) {
+  html, body, div, p, form, input, span, h1, h2, h3, button, ul, li { font-size: 11px; }
+  .intro .date { margin-bottom: 2.3rem; }
+  .intro .dateTitle { font-size: 2.3rem; }
+  .intro .clock { font-size: 5.3rem; }
+  .intro .username { font-size: 2.8rem; margin-bottom: .5rem; }
+
+  .main .title { font-size: 1.3rem; margin-bottom: .8rem; }
+}
+
+@media screen and (max-width: 1159px) {
+  html, body, div, p, form, input, span, h1, h2, h3, button, ul, li { font-size: 10px; }
+  .intro .date { margin-bottom: 2rem; }
+  .intro .dateTitle { font-size: 2rem; }
+  .intro .clock { font-size: 5rem; }
+  .intro .username { font-size: 2.5rem; margin-bottom: .3rem; }
+  
+  .main .title { font-size: 1.3rem; margin-bottom: .8rem; }
+
+}
+
+@media screen and (max-width: 1023px) {
+  html, body, div, p, form, input, span, h1, h2, h3, button, ul, li { font-size: 13px; }
+  .intro .date { margin-bottom: 2.8rem; }
+  .intro .dateTitle { font-size: 2.8rem; }
+  .intro .clock { font-size: 5.8rem; }
+  .intro .username { font-size: 3.3rem; margin-bottom: 1rem; }
+  
+  .main .title { font-size: 1.8rem; margin-bottom: 1.3rem; }
+
+  .intro { top: 24%; width: 100%; }
+  .main .content { flex-direction: column; align-items: center; }
+  .main .left { order: 2; }
+  .main .right { order: 1; }
+  .main .numberGame, .main .dDayCalculator { margin-bottom: 3.5rem; width: 40rem; }
+  .main .todoList { margin-bottom: 2rem; width: 40rem; }
+  .main .todoList ul { min-height: 10rem; }
+
+}
+
+@media screen and (max-width: 911px) {
+  html, body, div, p, form, input, span, h1, h2, h3, button, ul, li { font-size: 12px; }
+  .intro .date { margin-bottom: 2.5rem; }
+  .intro .dateTitle { font-size: 2.5rem; }
+  .intro .clock { font-size: 5.5rem; }
+  .intro .username { font-size: 3rem; margin-bottom: .8rem; }
+  
+  .main .title { font-size: 1.5rem; margin-bottom: 1rem; }
+
+  /* .intro { top: 24%; }
+  .content { flex-direction: column; align-items: center; }
+  .main .todoList, .main .dDayCalculator { margin-bottom: 3.5rem; width: 40rem; }
+  .main .numberGame { margin-bottom: 2rem; width: 40rem; }
+  .main .todoList ul { min-height: 10rem; } */
+}
+
+@media screen and (max-width: 819px) {
+  /* html, body, div, p, form, input, span, h1, h2, h3, button, ul, li { font-size: 12px; }
+  .intro .date { margin-bottom: 2.3rem; }
+  .intro .dateTitle { font-size: 2.3rem; }
+  .intro .clock { font-size: 5.3rem; }
+  .intro .username { font-size: 2.8rem; margin-bottom: .5rem; }
+  
+  .main .title { font-size: 1.3rem; margin-bottom: .8rem; } */
+}
+
+@media screen and (max-width: 499px) {
+  .main .content { height: 55%; }
+  .main .left { flex: 1 1 0; }
+
+}

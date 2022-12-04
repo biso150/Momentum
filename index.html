@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Challenges</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="introBg"></div>
+
+    <div class="bg"></div>
+
+    <div class="intro">
+      <div class="date">
+        <h3 class="dateTitle"></h3>
+        <h2 class="clock"></h2>
+      </div>
+
+      <div class="user">
+        <h2 class="username">Hello!</h2>
+        <form class="nameForm">
+          <input type="text" placeholder="Please write your name, Enter" class="name" required>
+        </form>
+      </div>
+    </div>
+
+    <div class="main none">
+      <div class="geolocation">
+        <p class="text">The weather in</p>
+        <p class="text"><h2 class="locate title"></h2> &nbsp; is <img src="" alt="geoImg" class="geoImg"></p>
+        <p class="text temperature"></p>        
+      </div>
+
+      <div class="content">
+        <div class="left">
+          <div class="todoList">
+            <h2 class="title">To-Do List</h2>
+            <div class="area">
+              <form class="todoListForm">
+                <input type="text" placeholder="Please enter a schedule, Enter" class="todo" required>
+              </form>
+              <ul></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="dDayCalculator">
+            <h2 class="title">D-day Calculator</h2>
+            <div class="area">
+              <div class="dDayForm">
+                <input type="text" maxlength="4" class="dYear" required placeholder="YYYY">
+                <input type="text" maxlength="2" class="dMonth" required placeholder="MM">
+                <input type="text" maxlength="2" class="dDay" required placeholder="DD">
+                <button class="countBtn">Count</button>
+              </div>
+              <div class="dDayResult none">
+                <p class="dDayInfo"></p>
+                <p class="dDayCount"></p>
+                <div class="btnBox">
+                  <button class="resetBtn">Reset</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="numberGame">        
+            <h2 class="title">A number game</h2>
+            <div class="area">
+              <form class="numberGameForm">
+                <div>
+                  <p>Range from 0 to <input class="inputNumber" type="text" required /></p>
+                  <p>Guess the number <input class="guessNumber" type="text" required /></p>
+                </div>
+                <button class="playBtn">Play!</button>
+              </form>
+              <div class="result none">
+                <p>You chose : <span class="choseNumber"></span>, the machine chose : <span class="machineNumber"></span>.</p>
+                <p class="resultText"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="backgroundChange.js"></script>
+    <script src="login.js"></script>
+    <script src="clock.js"></script>
+    <script src="numberGame.js"></script>
+    <script src="dDay.js"></script>
+    <script src="geolocation.js"></script>
+    <script src="toDo.js"></script>
+  </body>
+</html>
