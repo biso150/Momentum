@@ -45,5 +45,5 @@ function changeBgImg() {
 
   setTimeout(function() {
     changeToBodyImg();
-  }, 3000);
+  }, 5000);
 }
