@@ -33,7 +33,7 @@ button { background: #66c; border-radius: .5rem; padding: .5rem 1rem; color: #ff
 .intro .clock { font-size: 6rem; }
 .intro .nameForm { display: inline-block; }
 .intro .username { font-size: 3.5rem; margin-bottom: 1.2rem; }
-.intro input { border-radius: .5rem; text-align: center; width: 15rem; }
+.intro input { border-radius: .5rem; text-align: center; width: 18rem; }
 .intro input:hover, .intro input:focus { background: rgba(255,255,255,.5); }
 .intro input::placeholder { color: #fff; } 
 
