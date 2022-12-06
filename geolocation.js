@@ -1,6 +1,7 @@
 /*
 ** geolocation
 */
+const geolocation = document.querySelector(".geolocation");
 const locate = document.querySelector(".geolocation .locate");
 const temperature = document.querySelector(".geolocation .temperature");
 const gepImg = document.querySelector(".geolocation .geoImg");
@@ -21,6 +22,8 @@ function geoOk (position) {
     gepImg.src = getIcon;
     temperature.innerText = `the temperature is ${getTemperature}º`;
   });
+
+  geolocation.classList.remove("opacity0");
 }
 
 function geoError () {
