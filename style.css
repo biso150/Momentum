@@ -27,7 +27,7 @@ button { background: #66c; border-radius: .5rem; padding: .5rem 1rem; color: #ff
 
 .intro { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: inline-flex; 
   flex-direction: column; justify-items: center; text-align: center; z-index: 2; }
-.introBg { background: url("/img/bgImg04.jpg") center; background-size: cover; transition: 1s; }
+.introBg { background: url("img/bgImg04.jpg") center; background-size: cover; transition: 1s; }
 .intro .date { margin-bottom: 3rem; }
 .intro .dateTitle { font-size: 3rem; }
 .intro .clock { font-size: 6rem; }

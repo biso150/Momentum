@@ -7,15 +7,15 @@ const bgImgList = ["bgImg01.jpg", "bgImg02.jpg", "bgImg03.jpg", "bgImg04.jpg", "
 const body = document.body;
 const bg = document.querySelector(".bg");
 
-bg.style.backgroundImage = `url("/img/${bgImgList[0]}")`;
-body.style.backgroundImage = `url("/img/${bgImgList[1]}")`;
+bg.style.backgroundImage = `url("img/${bgImgList[0]}")`;
+body.style.backgroundImage = `url("img/${bgImgList[1]}")`;
 
 let bgImg, preBgImg;
 
 function getRandomImg () {
   bgImg = bgImgList[Math.floor(Math.random() * bgImgList.length)];
 
-  if (`url("/img/${bgImg}")` === preBgImg) {
+  if (`url("img/${bgImg}")` === preBgImg) {
     getRandomImg();
   }
 }
@@ -26,7 +26,7 @@ function changeToBodyImg () {
   setTimeout(function() {
     preBgImg = body.style.backgroundImage;
     getRandomImg ();
-    bg.style.backgroundImage = `url("/img/${bgImg}")`;
+    bg.style.backgroundImage = `url("img/${bgImg}")`;
   }, 1000);
 }
 
@@ -36,7 +36,7 @@ function changeToBgImg () {
   setTimeout(function() {
     preBgImg = bg.style.backgroundImage;
     getRandomImg ();
-    body.style.backgroundImage = `url("/img/${bgImg}")`;
+    body.style.backgroundImage = `url("img/${bgImg}")`;
   }, 1000);
 }
 
